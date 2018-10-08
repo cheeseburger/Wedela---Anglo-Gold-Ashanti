@@ -1,0 +1,243 @@
+\documentclass{nwureport}
+\RequirePackage[l2tabu, orthodox]{nag}
+\ifx\pdftexversion\undefined
+\usepackage[dvips]{graphicx}
+\else
+\usepackage[pdftex]{graphicx}
+% Only print picture outlines...
+%\usepackage[pdftex,draft]{graphicx}
+\DeclareGraphicsRule{*}{mps}{*}{}
+\fi
+
+\usepackage{caption}
+\usepackage{siunitx}
+
+\usepackage{minitoc}
+\usepackage{pdfpages}
+\usepackage{dirtree}
+\usepackage[toc,page]{appendix}
+%\usepackage[a4paper,lmargin=3.0cm, rmargin=1.0cm,tmargin=3.5cm,bmargin=2.50cm]{geometry}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Reset text/figure fractions to more reasonable values
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\topfraction}{0.85}
+\renewcommand{\textfraction}{0.1}
+\renewcommand{\floatpagefraction}{0.79}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Working
+%\renewcommand{\topfraction}{0.85}
+%\renewcommand{\textfraction}{0.}
+%\renewcommand{\floatpagefraction}{0.79}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\graphicspath{{./images/}}
+
+\usepackage{longtable}
+%\usepackage{fullpage} % reduce margin whitespace
+%\usepackage{setspace} % 
+
+% This makes TOC and lists have very little white spacing...
+\usepackage{tocloft}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Draft assistance
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{showkeys}
+%\usepackage{showlabels}
+%\usepackage{everypage}
+%\usepackage{draftwatermark}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{times} % font
+
+\usepackage{booktabs}
+
+\usepackage{multirow}
+
+\usepackage{cmap}     % to produce searchable PDF
+
+\usepackage{rotating,lscape}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Page style - footers and headers
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fancyhdr}
+\usepackage{tocloft}
+\pagestyle{fancy}
+
+\renewcommand{\chaptermark}[1]{\markboth{\thechapter.\ #1}{}} 
+\fancyhead{} % clear all header fields
+
+\fancypagestyle{plain}{%
+  \renewcommand{\headrulewidth}{0pt}% Header rule thickness
+  \renewcommand{\footrulewidth}{0pt}% Footer rule thickness
+  \fancyhf{}% Clear header/footer
+  \fancyhead[L]{}% Chapter in header Left
+  \renewcommand{\headrulewidth}{\iffloatpage{0pt}{0pt}}
+  \fancyfoot[C]{-\thepage-} % Page number at the bottom 
+}
+%\fancypagestyle{frontmatter}{%
+%  \renewcommand{\headrulewidth}{0pt}% No header rule
+%  \renewcommand{\footrulewidth}{0pt}% No footer rule
+%  \fancyhf{}% Clear header/footer
+%  \fancyfoot[C]{-\thepage-}%
+%}
+\fancypagestyle{mainmatter}{%
+  \renewcommand{\headrulewidth}{0pt}% Header rule
+  \renewcommand{\footrulewidth}{0pt}% Footer rule
+  \fancyhf{}% Clear header/footer
+  \fancyhead[L]{\scshape\leftmark}% Chapter in header Left
+  \fancyhead[R]{Assessing the source contribution to atmospheric particulate matter in Wedela}% Page number in header Right
+  \renewcommand{\headrulewidth}{\iffloatpage{0pt}{0pt}}
+  \fancyfoot[C]{-\thepage-} % Page number at the bottom 
+}
+
+%doesn't work
+%%\addtolength{\headheight}{5pt} 
+%%\cfoot[]{-\thepage-}
+%\fancyfoot{} % clear all footer fields
+%\fancyfoot[C]{-\thepage-}
+%%\renewcommand{\headrulewidth}{0pt}
+%%\renewcommand{\footrulewidth}{0pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[section]{placeins}
+
+\usepackage{amsmath,url}
+\usepackage{subeqnarray}
+
+%pdfpagelabels, % Need to solve the figure count reset to use this
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Hyperref pdf options
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[pdftitle={Assessing the source contribution to atmospheric particulate matter in Wedela},pdfpagemode=UseOutlines,colorlinks,pdfauthor={Roelof
+    Burger},bookmarks=true,pdftex=true,hyperindex,plainpages=false,pdfpagelabels,pagebackref]{hyperref}
+%\hypersetup{colorlinks,linkcolor=black,citecolor=black,pdfstartview=Fit}
+\hypersetup{pdfstartview=Fit}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TOC font settings
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage[titles]{tocloft}
+%\renewcommand{\cfttoctitlefont}{\sffamily}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Advanced glossaries package
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[toc,style=long]{glossaries}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{enumerate}
+\usepackage{verbatim}  %  This is to use \begin{comment} ...
+
+%\usepackage{sectsty}
+%\allsectionsfont{\usefont{OT1}{phv}{bc}{n}\selectfont}
+%\usepackage[sf]{titlesec}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Glossaries and abbreviations
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[toc,style=long]{glossaries}
+
+\newglossary{abbreviation}{aot}{ata}{Abbreviations}
+%\newglossary{compounds}{cot}{cts}{List of Compounds}
+% \newglossary{symbols}{sot}{sts}{List of Symbols}
+\loadglsentries[abbreviation]{abbreviations}
+%\loadglsentries[compounds]{compounds}
+% \loadglsentries[symbols]{symbols}
+\makeglossaries
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{natbib}
+\begin{document}
+\bibliographystyle{crg}
+
+     \title{Asessing the source contribution to atmospheric particulate matter in Wedela}
+     %\title{The establishment of rain gauge networks for rainfall estimation calibration of the South African new weather network}
+     \author{
+        Roelof Burger
+          \thanks{
+             Climatology Research Group\\
+             Unit for Environmental Sciences and Management \\
+             North-West University, Potchefstroom, 2520, South Africa \\
+             {\tt roelof.burger@nwu.ac.za}} \\
+     }
+     \activity{Progress report}
+     \projnumber{WEDANG01-QR1v1}
+     \lab{Environmental Sciences and Management}
+     \keywords{air quality, low-income settlements, townships, winter}
+     \maketitle
+
+\pagenumbering{roman}
+
+\chapter*{Executive Summary}
+
+
+\pagebreak
+
+\chapter*{Acknowledgments}
+
+The data was collected by:
+\\
+\begin{tabular}{ l l } 
+Joe Malahlela  & NWU \\
+Thomas Bigala  & NWU \\
+Roelof Burger  & NWU \\
+Marvin Qhekwana & NWU \\
+Thapelo Letsolo & NWU \\
+\end{tabular}
+
+\clearpage
+
+\dominitoc
+\setcounter{tocdepth}{2} % set depth level of TOC
+\pagestyle{plain}
+{\thispagestyle{plain}
+\tableofcontents
+% Add page heading 
+\addtocontents{toc}{~\hfill\textbf{Page}\par}
+\addcontentsline{toc}{chapter}{Contents}
+\clearpage
+\listoffigures
+\addtocontents{lof}{~\hfill\textbf{Page}\par}
+\addcontentsline{toc}{chapter}{Figures}
+\clearpage
+\listoftables
+\addtocontents{lot}{~\hfill\textbf{Page}\par}
+\addcontentsline{toc}{chapter}{Tables}
+%\clearpage
+\printglossaries
+%\clearpage
+}
+
+\pagenumbering{arabic}
+\pagestyle{mainmatter}
+
+
+\chapter{Introduction}
+
+This report describes the 
+
+%\minitoc
+
+\chapter{Proposed methodology}
+
+
+\chapter{Measurements of atmospheric particulate matter}
+
+
+\chapter{Source apportionment campaigns}
+
+
+
+\chapter{Conclusions}
+
+
+\begin{spacing}{0.3}
+\linespread{0.8} \normalsize
+\bibliography{library}
+\end{spacing}
+
+\end{document}
