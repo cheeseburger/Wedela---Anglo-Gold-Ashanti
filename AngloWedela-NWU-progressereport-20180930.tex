@@ -240,7 +240,7 @@ Kealeboga Ntshabela & NWU \\
 
 \chapter{Introduction}
 
-The association between air pollutants and health are well established (Dockery, 1993; Poppe et al., 2002). In fact, air quality related health impacts represents the greatest environmental health impact (Lim et al, 2012). Numerous sources contribute to ambient air quality levels. The relative contribution of different sources also vary significanly in space and time. Particulate matter is the most significant cause of human health impacts from poor air quality in South Africa currently. The total atmospheric loading of PM is associated with a diverse set of sources. In the context of the South African Highveld these could include agricultural activities; domestic fuel burning; opencast mining; power generation; refuge burning; wind-blown dust or motor vehicle emissions. Recent studies confirm that the biggest air pollution problems in South Africa are find in the area of low-income settlements (Hersey et al 2015). These areas are typically exposed to a multitude of low-level local sources in close proximity to where people spend most of their time. In order to implement an effective strategy to reduce ambient PM levels it is important to understand which of the sources listed above contribute the most to poor air quality. Low-income areas have the worst ambient air quality. These areas further holds great significance, as it is also home to a large proportion of South Africans. In this project an attempt will be made to apportion the contributions of identified sources to the ambient PM loading in the Wadela Township in North West. The specific objectives of this project can be summarised as:
+The association between air pollutants and health are well established (Dockery, 1993; Poppe et al., 2002). In fact, air quality related health impacts represents the greatest environmental health impact (Lim et al, 2012). Numerous sources contribute to ambient air quality levels. The relative contribution of different sources also vary significanly in space and time. Particulate matter is the most significant cause of human health impacts from poor air quality in South Africa currently. The total atmospheric loading of \gls{pm} is associated with a diverse set of sources. In the context of the South African Highveld these could include agricultural activities; domestic fuel burning; opencast mining; power generation; refuge burning; wind-blown dust or motor vehicle emissions. Recent studies confirm that the biggest air pollution problems in South Africa are find in the area of low-income settlements (Hersey et al 2015). These areas are typically exposed to a multitude of low-level local sources in close proximity to where people spend most of their time. In order to implement an effective strategy to reduce ambient \gls{pm} levels it is important to understand which of the sources listed above contribute the most to poor air quality. Low-income areas have the worst ambient air quality. These areas further holds great significance, as it is also home to a large proportion of South Africans. In this project an attempt will be made to apportion the contributions of identified sources to the ambient \gls{pm} loading in the Wadela Township in North West. The specific objectives of this project can be summarised as:
 
 \begin{itemize}
 \item Determine the ambient particulate loading at one ambient air quality site in the Wadela township;
@@ -250,6 +250,26 @@ The association between air pollutants and health are well established (Dockery,
 \end{itemize}
 
 This report documents the progress of this project to date.
+
+\begin{table}[!htbp]
+\caption[National ambient air quality standards]{National ambient air quality standards \citep{RSA_2009}}
+\label{table:naaqs}
+\begin{center}
+\begin{tabular}{l r r} 
+\toprule 
+\bfseries Averaging &                          & \bfseries Frequncy of \\
+\bfseries Period    &  \bfseries Concentration & \bfseries Exceedance  \\
+\midrule 
+\multicolumn{3}{l}{\bfseries Particulate Matter ($PM_{10}$)} \\
+24 hours &  75 \micro g/m$^3$ & 4 \\
+Annual   &  40 \micro g/m$^3$ & 0 \\
+\multicolumn{3}{l}{\bfseries Particulate Matter ($PM_{2.5}$)} \\
+24 hours & 40 \micro g/m$^3$ & 4 \\
+Annual   & 20 \micro g/m$^3$ & 0 \\
+\bottomrule 
+\end{tabular}
+\end{center}
+\end{table}
 
 \section{Scope of work}
 %\minitoc
@@ -358,8 +378,7 @@ to inform other efforts to quantify and prioritize source contribution.
 
 Ambient measurements of particulate matter provides the core justification for the study. It confirms the state
 of ambient air quality and confirms the rationale for the project. It further serves to put the source
-apportionment filter samples into the broader context. Continues measurements of particulate matter smaller
-than 2.5 micron (PM2.5) and smaller than 10 micron (PM10) will be measured for a 24 month period.
+apportionment filter samples into the broader context. Continues measurements of \gls{pm2.5}) and \gls{pm10} will be measured for a 24 month period.
 
 \section{Characterizing the chemical composition of ambient particulate matter in Wadela}
 
@@ -526,12 +545,32 @@ in the region.
 
 
 \section{Characterizing ambient particulate matter}
-Two EBAMs, one PM10 and one PM2.5 
+Two EBAMs, one \gls{pm10} and one \gls{pm2.5}
 
 Talk to Lucky, survey, source profiles
 
 \subsection{Instruments}
 
+\begin{table}
+\caption[Summary of instrumentation deployed.]{Summary of instrumentation deployed for the monitoring campaign.}
+\label{table:instruments}
+\begin{center}
+\begin{tabular}{l l r r r }
+\toprule
+\bfseries Parameter & \bfseries Instrument model & \bfseries Range & \bfseries Precision & \bfseries Sampling rate \\
+\midrule
+\multicolumn{5}{l}{\bfseries     Particulate matter } \\
+\gls{pm10} & Horiba BAM 1020                   & \num{0}-\SI{10}{\milli\gram\per\cubic\meter} & \SI{2.4}{\micro\gram\per\cubic\meter} &  \SI{60}{min} \\
+\gls{pm2.5} & MetOne E-Bam                      & \num{0}-\SI{65}{\milli\gram\per\cubic\meter} & \SI{2.5}{\micro\gram\per\cubic\meter} or \SI{10}{\percent} &  \SI{5}{min} \\
+\multicolumn{5}{l}{\bfseries Meteorology} \\
+Temperature & Vaisala HMP60 & \num{-40} to \SI{60}{\celsius} & $\pm$\SI{0.6}{\celsius} & 1 minute\\
+Humidity & Vaisala HMP60 & 0-100\% & $\pm$5\% & 1 minute \\
+Pressure & RM Young 61302 & 500 - 1100~\hecto\pascal & 0.3~\hecto\pascal & 1 minute \\
+Wind & RM Young 05103 & 0 - 100~\meter\per\second  & $\pm$3~\meter\per\second\; or 1~\%  & 1 minute \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
 
 \begin{figure}[!htb]
     \centering
@@ -567,7 +606,7 @@ Dispersion modelling using AERMOD
 \section{Realtime data access}
 
 A real-time monitoring solution has been established through \url{www.ecostat.co.za} to
-the EBAM PM2.5 and PM10 instruments located in Wadela. Ecostat allows users to access the data
+the EBAM \gls{pm2.5} and \gls{pm10} instruments located in Wadela. Ecostat allows users to access the data
 through any browser such as Firefox, Chrome or Internet Explorer. 
 
   
@@ -784,42 +823,42 @@ research staff have access to the site.
 
 \begin{figure}[!htb]
     \centering
-    \includegraphics[width=\textwidth]{images/Wedela_PM2-5_timevary.png}
+    \includegraphics[width=\textwidth]{images/Wedela_pm2-5_timevary.png}
     \caption{Caption}
     \label{fig:summary}
 \end{figure}
 
 \begin{figure}[!htb]
     \centering
-    \includegraphics[width=\textwidth]{images/Wedela_PM10_timevary.png}
+    \includegraphics[width=\textwidth]{images/Wedela_pm10_timevary.png}
     \caption{Caption}
     \label{fig:summary}
 \end{figure}
 
 \begin{figure}[!htb]
     \centering
-    \includegraphics[width=\textwidth]{images/Wedela_PM10_percentileRose.png}
+    \includegraphics[width=\textwidth]{images/Wedela_pm10_percentileRose.png}
     \caption{Caption}
     \label{fig:summary}
 \end{figure}
 
 \begin{figure}[!htb]
     \centering
-    \includegraphics[width=\textwidth]{images/Wedela_PM10_polar.png}
+    \includegraphics[width=\textwidth]{images/Wedela_pm10_polar.png}
     \caption{Caption}
     \label{fig:summary}
 \end{figure}
 
 \begin{figure}[!htb]
     \centering
-    \includegraphics[width=\textwidth]{images/Wedela_PM2-5_percentileRose.png}
+    \includegraphics[width=\textwidth]{images/Wedela_pm2-5_percentileRose.png}
     \caption{Caption}
     \label{fig:summary}
 \end{figure}
 
 \begin{figure}[!htb]
     \centering
-    \includegraphics[width=\textwidth]{images/Wedela_PM2-5_polar.png}
+    \includegraphics[width=\textwidth]{images/Wedela_pm2-5_polar.png}
     \caption{Caption}
     \label{fig:summary}
 \end{figure}
@@ -828,7 +867,7 @@ research staff have access to the site.
 \section{Preliminary results}
 
 The following section shows some of the results from the Wedela monitoring site that include meteorological
-and pollution data (PM2.5 and PM10). A basic QC was applied to this data-set where missing values was removed.
+and pollution data (gls{pm2.5} and gls{pm10}). A basic QC was applied to this data-set where missing values was removed.
 
 
 
