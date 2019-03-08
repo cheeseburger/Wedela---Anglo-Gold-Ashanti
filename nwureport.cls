@@ -280,7 +280,7 @@
       \put(-4,-110){\centerline{\parbox[t]{13cm}{\color{black}\author@font the North-West University}}}
       \put(-4,-250){\centerline{\author@font{\color{Gray}\@activity}}}
       \put(-4,-270){\centerline{\tinfo@font{\color{Gray}\@projnumber}}} 
-      \put(-4,-290){\centerline{\tinfo@font{\color{Gray}October 2018}}} 
+      \put(-4,-290){\centerline{\tinfo@font{\color{Gray}February 2019}}} 
     \end{picture} \\
   \end{figure}
   \cleardoublepage
