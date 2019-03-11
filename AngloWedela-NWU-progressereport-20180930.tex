@@ -785,6 +785,9 @@ A&625&140&1943&980&1976&365&1903&85.5&&&61.1&&&21&3.3\\
 \chapter{Ambient monitoring}
 \label{sec:ambient}
 
+The initial results for the continuous ambient monitoring are presented in this chapter. The instruments were installed at the end of May 2018 and data are presented till the end of January 2019. Ambient \gls{pm} concentrations are compared against the national ambient standards as defined in \cite{RSA2009a} (see Table~\ref{table:naaqs}). The raw timeseries of the most important parameters are presented in Figure~\ref{fig:summary}. The data recovery and distribution of data are also presented.
+
+Unreliable power supply continues to hamper data recovery in Wedela. The following major incidents caused futher data loss. The \gls{pm10} E-BAM was removed and taken for repair between 19 and 26 October 2018. The cable was damaged and all instruments lost data for a 2 week period in the end of November 2018. The \gls{pm10} E-BAM had tape advance problems in December 2018. The \gls{pm10} E-BAM sustained water damage on 10 January 2019 and was removed for repair. It has since been returned to the site.
 
 \begin{table}[!htbp]
 \caption[National ambient air quality standards]{National ambient air quality standards \citep{RSA2009a}}
@@ -814,6 +817,8 @@ Annual   & \SI{20}{\micro\gram\per\cubic\meter} & 0 \\
 \end{figure}
 
 \section{Meteorological measurements}
+
+Meteorological data was captured at Wedela include temperature, relative humidity, pressure and winds. The variability of temperature (Figure~\ref{fig:summary-tmp}) and humidity (Figure~\ref{fig:summary-rh}) shows characteristic diurnal and seasonal variability. The dominant wind direction are northerly and northeasterly for most of the year, apart for November and December where a southwesterly component dominate (Figure~\ref{fig:windrose-monthly}). The diurnal distribution of with wind profile is similar with northeasterly directions dominating during the daylight hours and south westerlies also being prominent in the mornings (Figure~\ref{fig:windrose-hourly}). The diurnal and seasonal variation in wind speed is shown in Figure~\ref{fig:timevary-winds}. Wind speeds peak during the day with a minima shortly after sunset. August and September, and again November and December feature higher than normal wind speeds.
 
 \begin{figure}[!htb]
     \centering
@@ -847,13 +852,14 @@ Annual   & \SI{20}{\micro\gram\per\cubic\meter} & 0 \\
     \centering
     \includegraphics[width=\textwidth]{images/Wedela_Wind_Speed_timevary.png}
     \caption{Time variation of wind speed in Wedela.}
-    \label{fig:summary}
+    \label{fig:timevary-winds}
 \end{figure}
 
 \section{Measurements of atmospheric particulate matter}
 
-Particulate matter (PM) comprises a mixture of solid and/or liquid particles (organic and inorganic) suspended in air. Even though PM is a widespread pollutant, the chemical and physical characteristics of the PM mixture may vary greatly by location and source. The fact that PM could be formed primarily or secondarily and continues to undergo chemical and physical transformation whilst in the atmosphere, further adds to its complexity. This variability complicates the study of exposure and risks as different characteristics of PM may cause different health effects (Samet et al., 2006). There is currently not enough evidence at the population level to conclusively determine the effects of different chemical compositions or sources of PM on health (WHO, 2006). For this reason, air quality guidelines still classify particles by their aerodynamic properties. This is still the most widely used method of classification since the aerodynamic properties of particulates influence their transport and removal from the atmosphere in addition to their deposition sites and clearance pathways in the respiratory system (WHO, 2006).
+\gls{pm} comprises a mixture of solid and/or liquid particles (organic and inorganic) suspended in air. Even though \gls{pm} is a widespread pollutant, the chemical and physical characteristics of the \gls{pm} mixture may vary greatly by location and source. The fact that \gls{pm} could be formed primarily or secondarily and continues to undergo chemical and physical transformation whilst in the atmosphere, further adds to its complexity. This variability complicates the study of exposure and risks as different characteristics of \gls{pm} may cause different health effects (Samet et al., 2006). There is currently not enough evidence at the population level to conclusively determine the effects of different chemical compositions or sources of \gls{pm} on health (WHO, 2006). For this reason, air quality guidelines still classify particles by their aerodynamic properties. This is still the most widely used method of classification since the aerodynamic properties of particulates influence their transport and removal from the atmosphere in addition to their deposition sites and clearance pathways in the respiratory system (WHO, 2006).
 
+A summary of the data collected is presented in Table~\ref{table:pmstats}.
 
 \begin{table}[!htbp]
 \caption[Statistics for ambient particulate matter during
@@ -889,89 +895,52 @@ Jan &  13 &  8-19 &   9 &  0 &  5 &  13 &  11 &  14 &  23 &  29 \\
 
 \begin{figure}[!htb]
     \centering
-    \includegraphics[width=\textwidth]{images/Wedela_pm2-5_timevary.png}
+    \includegraphics[width=\textwidth]{images/Wedela_PM2-5_timevary.png}
     \caption[The variability of $PM_{2.5}$ with time.]{The variability of \gls{pm2.5} with time.}
     \label{fig:summary}
 \end{figure}
 
 \begin{figure}[!htb]
     \centering
-    \includegraphics[width=\textwidth]{images/Wedela_pm10_timevary.png}
+    \includegraphics[width=\textwidth]{images/Wedela_PM10_timevary.png}
     \caption[The variability of $PM_{10}$ with time.]{The variability of \gls{pm10} with time.}
     \label{fig:summary}
 \end{figure}
 
 \begin{figure}[!htb]
     \centering
-    \includegraphics[width=\textwidth]{images/Wedela_pm10_percentileRose.png}
+    \includegraphics[width=\textwidth]{images/Wedela_PM10_percentileRose.png}
     \caption[Pollution rose for $PM_{10}$ for the sampling campaign.]{Pollution rose for \gls{pm10} for the sampling campaign.}
     \label{fig:summary}
 \end{figure}
 
 \begin{figure}[!htb]
     \centering
-    \includegraphics[width=\textwidth]{images/Wedela_pm10_polar.png}
+    \includegraphics[width=\textwidth]{images/Wedela_PM10_polar.png}
     \caption[Polar plot for $PM_{10}$ for the sampling campaign.]{Polar plot for \gls{pm10} for the sampling campaign.}
     \label{fig:summary}
 \end{figure}
 
 \begin{figure}[!htb]
     \centering
-    \includegraphics[width=\textwidth]{images/Wedela_pm2-5_percentileRose.png}
+    \includegraphics[width=\textwidth]{images/Wedela_PM2-5_percentileRose.png}
     \caption[Pollution rose for $PM_{2.5}$ for the sampling campaign.]{Pollution rose for \gls{pm2.5} for the sampling campaign.}
     \label{fig:summary}
 \end{figure}
 
 \begin{figure}[!htb]
     \centering
-    \includegraphics[width=\textwidth]{images/Wedela_pm2-5_polar.png}
+    \includegraphics[width=\textwidth]{images/Wedela_PM2-5_polar.png}
     \caption[Polar plot for $PM_{2.5}$ for the sampling campaign.]{Polar plot for \gls{pm2.5} for the sampling campaign.}
     \label{fig:summary}
 \end{figure}
 
-
-\section{Preliminary results}
-
-The following section shows some of the results from the Wedela monitoring site that include meteorological
-and pollution data (gls{pm2.5} and gls{pm10}). A basic QC was applied to this data-set where missing values was removed.
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-What have we been doing so far
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Source apportionment campaigns}
 \label{sec:source}
 
-Describe the campaigns and list data collected
-Ascribing ambient PM to their sources is possible as every source may be distinguished by its unique chemical composition. The chemical species frequently found in different source emissions, according to their chemical abundances, are summarised in ensuing Table 5. 
-
-Geological material contains great abundances of Al, Si, K, Ca and Fe. The total K abundance is approximately \num{15} to \num{30} times the abundance of K+. The abundances of Al, K, Ca and Fe are similar among the source profiles, although Si abundances range from SIrange{14}{20}{\percent} in unpaved and paved road dust, respectively. Elemental carbon abundances are highly variable in geological material and are often negligible in natural soil samples while organic carbon is \SIrange{5}{15}{\percent} in geological profiles, being most abundant in paved road dust and agricultural dust. 
-
-Motor vehicle emissions are likely contributors to Pb, elemental carbon (EC) and organic carbon (OC) abundances observed in paved road dust. In general, abundances of SO42-, NO3-, NH4+, are low, falling in the range of \SIrange{0}{0.3}{\percent}. Similarly, Na and Cl are low, with less than \SI{0.5}{\percent} in abundance. Elemental and organic carbon are the most abundant species in motor vehicle exhaust, contributing to over \SI{95}{\percent} of the total mass. Nevertheless, Pb and Br abundances are low and highly variable. Zn was found in most vehicle exhaust profiles, although currently at low abundance (\SI{0.05}{\percent} or less) (Watson et al., 2004).
-
-Fine fraction particulate profiles investigated by \cite{Watson1996} for residential wood combustion, residential coal combustion and forest fires found average organic carbon abundances, ranging from approximately \SI{50}{\percent} in residential wood combustion and forest fire profiles to approximately \SI{70}{\percent} in the residential coal combustion profiles. Elemental carbon profiles averaged \SI{3}{\perent}, \SI{12}{\perent} and \SI{26}{\perent} in forest fires, residential wood combustion and residential coal combustion profiles, respectively. The organic carbon/total carbon ratio was highest in the forest fire profile with a ratio of \num{0.94}. Similar ratios were observed for residential wood and coal combustion profiles, with \num{0.81} and \num{0.73} recorded, respectively (Watson et al., 2004). Calloway et al. (1989) recognised K+/K ratios of \num{0.80} to \num{0.90} in burning profiles compared to the low ratios measured in geological material. SO42-, NO3-, and Si abundances in residential coal combustion are \num{2} to \num{4} times higher than those in residential wood combustion and forest fire profiles. Highly variable NH4+ abundances were measured, indicating an average of \SI{1.4}{\perent} in residential coal combustion and \SI{0.1}{\perent} in the residential wood combustion and forest fire profiles (Watson et al., 2004).
-
-Profiles for coal-fired power generation differ substantially from residential coal combustion, despite the fuels being similar, owing to the different emission control technologies utilised. SO42- has exceedingly high abundances in the particle phase while \gls{so2} may be hundreds to thousands of times higher than the particle mass. Crustal elements as Si, Ca and Fe in the coal-fired power generation profiles are currently at \SIrange{30}{50}{\perent} of the corresponding levels found in the geological material. Al indicated similar or higher levels in the power generation profile as compared to the geological material. Other elements, for instance; P, K, Ti, Cr, Mn, Sr, Zr and Ba have less than \SI{1}{\perent} abundances. Also, Se has been detected at abundances of \SIrange{0.2}{0.4{\perent} in coal-fired power station emissions where scrubbers were not installed \cite{Watson1996}.
-  
-Abundances of SO42-, NO3-, and NH4+ of directly emitted particles might not account for the concentration of the species measured in the atmosphere as ambient concentrations contain both primary and secondary particles. SO2, NH4+ and NOx are the precursors for sulphuric acid, ammonium bisulphate, ammonium sulphate and ammonium nitrate particles (Seinfeld, 1986; Watson et al., 1994). Numerous volatile organic compounds (VOCs) may also modify into particles due to photochemical transformation (Grosjean & Seinfeld, 1989). Several of these particles, notably those containing ammonium nitrate, are volatile and transfer mass between the gas and particle phase to maintain a chemical equilibrium (Stelson & Seinfeld, 1982a-c). This volatility has implications for ambient concentration measurements as well as for gas and particle concentrations in the atmosphere.
-
-\begin{figure}[!htb]
-    \centering
-    \includegraphics[width=\textwidth]{images/Density_DateSizeSeason_mass.png}
-    \caption{Caption}
-    \label{fig:summary}
-\end{figure}
-
-\begin{figure}[!htb]
-    \centering
-    \includegraphics[width=\textwidth]{images/Density_DaySizeSeason_mass.png}
-    \caption{Caption}
-
-\end{figure}
 
 \begin{figure}[!htb]
     \centering
@@ -1013,15 +982,20 @@ Abundances of SO42-, NO3-, and NH4+ of directly emitted particles might not acco
 \chapter{Capacity building}
 \label{sec:capacity}
 
-The project was designed to include capacity building through student participation. Four students are involved in the project.
+The project was designed to include capacity building through student participation. Four students are involved in the project. Their details are listed in Table~\ref{table:capacity}.
 
 \begin{table}[!htbp]
 \label{table:capacity}
+\caption{Students participating in the study.}
 \begin{center}
-  \begin{tabular}{l l r}
+  \begin{tabular}{l l r l}
     \toprule
-    \bfseries{Student name} & \bfseries{Degree} & \bfseries{Student nr} & \bfseries{Estimated graduation year} \\
+    \bfseries{Student name} & \bfseries{Degree} & \bfseries{Student nr} & \bfseries{Graduation year} \\
     \midrule
+    Marvin Qhekwana & MSc & 24362042 & 2019 \\
+    Thapelo Letsholo & MSc & 24308277 & 2019 \\
+    Kealeboga Ntshabela & MSc & 24352829 & 2020 \\
+    Prince Chidhindi & MSc & 25267108 & 2020 \\ 
     \bottomrule
   \end{tabular}
 \end{center}
