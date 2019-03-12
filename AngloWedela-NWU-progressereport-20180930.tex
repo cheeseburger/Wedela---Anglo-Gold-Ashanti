@@ -859,7 +859,7 @@ Meteorological data was captured at Wedela include temperature, relative humidit
 
 \gls{pm} comprises a mixture of solid and/or liquid particles (organic and inorganic) suspended in air. Even though \gls{pm} is a widespread pollutant, the chemical and physical characteristics of the \gls{pm} mixture may vary greatly by location and source. The fact that \gls{pm} could be formed primarily or secondarily and continues to undergo chemical and physical transformation whilst in the atmosphere, further adds to its complexity. This variability complicates the study of exposure and risks as different characteristics of \gls{pm} may cause different health effects (Samet et al., 2006). There is currently not enough evidence at the population level to conclusively determine the effects of different chemical compositions or sources of \gls{pm} on health (WHO, 2006). For this reason, air quality guidelines still classify particles by their aerodynamic properties. This is still the most widely used method of classification since the aerodynamic properties of particulates influence their transport and removal from the atmosphere in addition to their deposition sites and clearance pathways in the respiratory system (WHO, 2006).
 
-A summary of the data collected is presented in Table~\ref{table:pmstats}.
+A summary of the data collected is presented in Table~\ref{table:pmstats}. The variability of \gls{pm2.5} are shown in Figure~\ref{fig:time-pm2.5} and of \gls{pm10} in Figure~\ref{fig:time-pm10}.
 
 \begin{table}[!htbp]
 \caption[Statistics for ambient particulate matter during
@@ -897,14 +897,14 @@ Jan &  13 &  8-19 &   9 &  0 &  5 &  13 &  11 &  14 &  23 &  29 \\
     \centering
     \includegraphics[width=\textwidth]{images/Wedela_PM2-5_timevary.png}
     \caption[The variability of $PM_{2.5}$ with time.]{The variability of \gls{pm2.5} with time.}
-    \label{fig:summary}
+    \label{fig:time-pm2.5}
 \end{figure}
 
 \begin{figure}[!htb]
     \centering
     \includegraphics[width=\textwidth]{images/Wedela_PM10_timevary.png}
     \caption[The variability of $PM_{10}$ with time.]{The variability of \gls{pm10} with time.}
-    \label{fig:summary}
+    \label{fig:time-pm10}
 \end{figure}
 
 \begin{figure}[!htb]
@@ -935,54 +935,57 @@ Jan &  13 &  8-19 &   9 &  0 &  5 &  13 &  11 &  14 &  23 &  29 \\
     \label{fig:summary}
 \end{figure}
 
+Ambient \gls{pm} measurements show that the area is not currently in compliance. A total of 9 daily average exceedances were obsered for \gls{pm10} and 3 for \gls{pm2.5} during the 163 days where more than \SI{80}{\percent} data were available. The only month where daily average concentrations of \gls{pm2.5} exceeded the standards were September. \gls{pm10} daily average concentrations exceeded the standard in August and September. Another important feature of the ambient \gls{pm} concentrations is an uncharacteristic diurnal distribution. The typical bimodal distributions with peaks in the morning and afternoon that coincide with times of maximum activity in and around households. In Wedela, the \gls{pm10} has a pronounced peak during the day and \gls{pm2.5} has a small peak in the afternoon. It suggests that the sources contributing to ambient \gls{pm10} are driven by the boundary layer evolution and that different sources can be driving ambient loading of \gls{pm2.5}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Source apportionment campaigns}
 \label{sec:source}
 
+Two source apportionment campaigns have been completed. One was conducted between 29 May 2018 and 16 June 2018. Another between 16 July 2018 and 03 August 2018. During these campaigns, four sets of filters were exposed for 12 hour duration. Filters were changed at 10h00 in the morning and 22h00 at night.
+
+Two of the filter sets used teflon as a media, one for fine (\gls{pm2.5}) and one for course particles (between \gls{pm2.5} and \gls{pm10}). These are analysed using \gls{xrf} for elemental, and \gls{ic} for ionic composition. Two additional filters that uses quartz as a media were also exposed for fine and coarse fractions. These will be analysed for \gls{oc} and \gls{ec} fractions. The chemical analysis yields a vector of elemental, ionic and OC/EC concentrations that are then used in the receptor modelling.
+
+The gravimetric analysis for the exposed filters are presented in Figure~\ref{fig:filter-mass} and the time series of these loadings in Figure~\ref{fig:filter-mass-times}. A comparison of the coarse and fine fractions are shown in Figure~\ref{fig:coarse-vs-fine}.
+
+The \gls{xrf} analysis for the two campaigns are completed. A summary of the data are presented in Figure~\ref{fig:xrf-summary}. The \gls{ic} and \gls{oc}/\gls{ec} analysis are currently underway. The \gls{cmb} and \gls{pmf} models have been set up and the receptor modelling for the first two campaigns will be commenced once the chemical analysis is complete.
+
+A summer source apportionment campaign was just completed between 18 February 2019 and 1 March 2019. The gravitational and \glx{xrf} for these samples are currently in progress.
 
 \begin{figure}[!htb]
     \centering
     \includegraphics[width=\textwidth]{images/Density_FilterDateSizeSeason_mass.png}
-    \caption{Caption}
-    \label{fig:summary}
-\end{figure}
-
-\begin{figure}[!htb]
-    \centering
-    \includegraphics[width=\textwidth]{images/Density_FilterDateSizeSeason.png}
-    \caption{Caption}
-    \label{fig:summary}
+    \caption{The gravitational results from the first two source apportionment campaigns.}
+    \label{fig:filter-mass}
 \end{figure}
 
 \begin{figure}[!htb]
     \centering
     \includegraphics[width=\textwidth]{images/TS_FilterDateSizeSeason_sep_mass.png}
-    \caption{Caption}
-    \label{fig:summary}
+    \caption{Time series comparing the coarse and fine gravitational results from the first two source apportionment campaigns.}
+    \label{fig:filter-mass-times}
 \end{figure}
 
 \begin{figure}[!htb]
     \centering
     \includegraphics[width=\textwidth]{images/TS_FilterDaySizeSeason_mass.png}
-    \caption{Caption}
-    \label{fig:summary}
+    \caption{Time series comparing the coarse and fine gravitational weekly variability from the first two source apportionment campaigns.}
+    \label{fig:coarse-vs-fine}
 \end{figure}
 
 
 \begin{figure}[!htb]
     \centering
     \includegraphics[width=\textwidth]{images/xrf.png}
-    \caption{Caption}
-    \label{fig:summary}
+    \caption{Summary of the XRF results from the first two campaigns.}
+    \label{fig:xrf-summary}
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Capacity building}
 \label{sec:capacity}
 
-The project was designed to include capacity building through student participation. Four students are involved in the project. Their details are listed in Table~\ref{table:capacity}.
+The project was designed to include capacity building through student participation. Four students are involved in the project. Their details are listed in Table~\ref{table:capacity}. Mr Qhekwana and Mr Thapelo are finishing off their studies during the first half of 2019. Their studies used the same methods deployed in this project, but focused on other geographic areas. The research questions of Mr Ntshabela and Mr Chidhindi focus specifically on Wedela. Other students that were involved in data analysis and report writing includes Henno Havenga and Brigitte Language.
 
 \begin{table}[!htbp]
 \label{table:capacity}
